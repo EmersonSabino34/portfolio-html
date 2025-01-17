@@ -2,9 +2,8 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio - Emerson Ricardo Felix Sabino</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Emerson Sabino</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -28,22 +27,43 @@
             color: white;
             padding: 20px 0;
         }
-        span{
-            padding: 10px 20px;
+        span {
+            padding: 5px 10px;
             border-radius: 7px;
-            
             background: linear-gradient(to right, #007bff, #6610f2);
             color: white;
-            line-height: 50px;
         }
-        img{
-            transition: .5s;
+        img {
+            transition: 0.5s;
             cursor: pointer;
         }
-        img:hover{
-            transform: scale(2);
-            z-index: 99;
+        img:hover {
+            transform: scale(1.1);
         }
+        .btn-success {
+            background: #25d366;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.3s;
+        }
+        .btn-success i {
+            margin-right: 8px;
+            font-size: 1.5rem;
+        }
+        .btn-success:hover {
+            background: #1ebe57;
+            transform: scale(1.1);
+        }
+        .text-paragrafo{
+            font-size: 20px;
+        }
+        
     </style>
 </head>
 <body>
@@ -59,6 +79,7 @@
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#freelance">Freelance</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -74,18 +95,19 @@
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am a Junior Full Stack Developer with experience in 
-                <span>JavaScript</span>, 
-                <span>TypeScript</span>, 
-                <span>Node.js</span>, and familiarity with frameworks such as 
-                <span>Next.js</span>,  
-                <span>React.js</span>. 
-                I focus on developing efficient solutions and creating functional, responsive interfaces.</p>
-        </div>
+   <!-- About Me -->
+<section id="about" class="py-5" style="background: linear-gradient(to right, #007bff, #6610f2); color: white;">
+    <div class="container">
+        <h2 class="text-center mb-4">About Me</h2>
+        <div class="row">
+            <div class="col">
+                <h3>Who Am I?</h3>
+                <p class="text-paragrafo">Hello! My name is <strong>Emerson Sabino</strong>, and I am a passionate Junior Full Stack Developer driven by technology and innovation.  
+                   Since the beginning of my journey in programming, I’ve been motivated by curiosity and the desire to create solutions that truly make a difference in the world.  
+                   I believe technology is not just a tool but a way to connect people and turn ideas into reality.</p>
+                <p class="text-paragrafo">I have experience developing modern and responsive applications using cutting-edge technologies like 
+                   <strong>JavaScript, TypeScript, React.js</strong>, and <strong>Next.js</strong>. My focus is on ensuring every project combines functionality with elegant and intuitive design.</p>
+                <p class="text-paragrafo">Beyond coding, I am dedicated to continuous learning. I enjoy exploring
     </section>
 
     <!-- Projects Section -->
@@ -95,7 +117,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card project-card">
-                        <img width="350" height="200" src="./screens/page1.png" class="card-img-top" alt="Project 1">
+                        <img src="./screens/page1.png" class="card-img-top" alt="Project 1">
                         <div class="card-body">
                             <h5 class="card-title">Full Stack App</h5>
                             <p class="card-text">Developed with NextJS</p>
@@ -105,19 +127,19 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card project-card">
-                        <img width="350" height="200" src="./screens/page2.png" class="card-img-top" alt="Project 1">
+                        <img src="./screens/page2.png" class="card-img-top" alt="Project 2">
                         <div class="card-body">
-                            <h5 class="card-title">LandPage</h5>
-                            <p class="card-text">Developed with Javascript Html</p>
+                            <h5 class="card-title">Landing Page</h5>
+                            <p class="card-text">Developed with HTML and JavaScript</p>
                             <a href="#" target="_blank" class="btn btn-primary">View Project</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card project-card">
-                        <img width="350" height="200" src="./screens/page3.png" class="card-img-top" alt="Project 1">
+                        <img src="./screens/page3.png" height="400" class="card-img-top" alt="Project 3">
                         <div class="card-body">
-                            <h5 class="card-title">Full Stak</h5>
+                            <h5 class="card-title">Full Stack Project</h5>
                             <p class="card-text">Developed with ReactJS</p>
                             <a href="#" target="_blank" class="btn btn-primary">View Project</a>
                         </div>
@@ -152,12 +174,28 @@
         </div>
     </section>
 
+    <!-- Freelance Section -->
+    <section id="freelance" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="text-primary">Freelance Services</h2>
+            <p>I am available for freelance work! Let’s collaborate on your next project.</p>
+            <a href="https://wa.me/351926060650" target="_blank" class="btn btn-success btn-lg">
+                <i class="fab fa-whatsapp"></i> Contact Me on WhatsApp
+            </a>
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
+    <section id="contact" class="py-5">
         <div class="container">
             <h2>Contact</h2>
-            <p>Email: EmersonSabino34@gmail.com</p>
-            <p>GitHub: <a href="https://github.com/EmersonSabino34">https://github.com/EmersonSabino34</a></p>
+            <p>Email: Emerson90_Sabino@hotmail.com</p>
+            <p>GitHub: <a href="https://github.com/EmersonSabino34" target="_blank">https://github.com/EmersonSabino34</a></p>
+            <p>
+                <a href="https://wa.me/351926060650" target="_blank" class="text-success">
+                    <i class="fab fa-whatsapp"></i> WhatsApp: +351 926 060 650
+                </a>
+            </p>
         </div>
     </section>
 
@@ -169,4 +207,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
