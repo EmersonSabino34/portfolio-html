@@ -1,4 +1,4 @@
-#### Emerson Máquina de Desenvolvimento
+#### Atividades diversas
 
 <img src="./screens/page1.png" alt="">
 <img src="./screens/page2.png" alt="">
